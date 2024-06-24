@@ -1,0 +1,118 @@
+.headerFont1 {
+    font-size: 75px;
+    line-height: 75px;
+    /* margin-bottom: 10vh; */
+    color: #3dd34f;
+    font-weight: 800;
+}
+  
+.headerFont2 {
+    /* color: #242424; */
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-bottom: 7vh !important;
+}
+  
+.headerFont3 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    background-image: linear-gradient(248.61deg, #4C7031 35.93%, #F2AE1C 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 7% !important;
+}
+  
+.moreDetailsButton {
+    width: 30%;
+    border: 2px solid #F5B443;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 5% !important;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.entertainment-card__video {
+    grid-column: 5 / -1;
+    grid-row: 1 / -1;
+    margin: auto;
+}
+
+
+
+
+/* Ring and image related CSS */
+
+.video-card {
+    position: relative;
+    z-index: 1;
+    height: 600px;
+    width: 600px;
+}
+
+.video-card__previev {
+    border-radius: 50% 30%;
+    left: -10%;
+    width: 520px;
+    height: 540px;
+    max-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 4%;
+    /* transform: translate(-10%, -10%); */
+    transform: perspective(1000px) rotateY(-30deg) scale(1, 0.9) translateZ(-100px);
+    z-index: -1;
+}
+
+.ring-container {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-position 0.3s ease;
+    z-index: 30;
+    /* transform: rotate(180deg); */
+
+}
+
+.animate {
+    animation: spin 0.3s steps(10) forwards, spin-back 0.3s steps(10) reverse forwards;
+}
+
+.animate-forward {
+    animation: spin 0.3s steps(10) forwards;
+}
+
+.animate-backward {
+    animation: spin-back 0.3s steps(10) forwards;
+}
+
+@keyframes spin {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 -5776px;
+    }
+}
+
+@keyframes spin-back {
+    from {
+        /* 5950 */
+        background-position: 0 -5776px;  
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+
+
+
