@@ -153,8 +153,8 @@ function LargeItem({ caseStudy }: LargeItemProps) {
             {caseStudy.title}
           </Typography>
 
-          <TextMaxLine variant="body2" sx={{ color: 'text.secondary' }}>
-            {caseStudy.description}
+          <TextMaxLine variant="body2" line={5} sx={{ color: 'text.secondary' }}>
+          The planned summer party should be a special highlight that will stay in the guests' minds for a long time? Then plan a trip to the Munich Caribbean with us.
           </TextMaxLine>
         </div>
 

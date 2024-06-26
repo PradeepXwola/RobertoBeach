@@ -23,7 +23,7 @@ export default function EventCaseStudiesView() {
             textAlign: { xs: 'center', md: 'left' },
           }}
         >
-          <Typography variant="h2">Our Case Studies pradeep</Typography>
+          <Typography variant="h2">Our Events</Typography>
 
           <Typography sx={{ color: 'text.secondary' }}>
             Nullam tincidunt adipiscing enim.

@@ -17,17 +17,17 @@ const ROWS = [
   {
     label: 'Events',
     total: 1000,
-    content: 'Praesent turpis. Praesent blandit laoreet nibh. Nunc nonummy metus.',
+    content: 'We are very much excited to say that we have succesfully organized 1000+ events in Roberto beach.',
   },
   {
     label: 'Happy customers',
     total: 3200,
-    content: 'Praesent turpis. Praesent blandit laoreet nibh. Nunc nonummy metus.',
+    content: 'We are happy to say that we have 3.2k+ Happy customers who have celebrated their special days with our Roberto Beach.',
   },
   {
     label: 'years of experience',
     total: 20,
-    content: 'Praesent turpis. Praesent blandit laoreet nibh. Nunc nonummy metus.',
+    content: 'Roberto Beach have 20+ years of experiance in organizing events. ',
   },
 ];
 
