@@ -18,6 +18,11 @@ export const paths = {
     caseStudies: '/event/allEvents',
     caseStudy: `/event/case-study`,
   },
+  restaurant: {
+    root: '/restaurant',
+    /* caseStudies: '/event/case-studies',
+    caseStudy: `/event/case-study`, */
+  },
   // Travel
   travel: {
     root: '/travel',
@@ -89,7 +94,7 @@ export const paths = {
   contactUs: '/contactUs',
   eventDetails: '/eventDetails',
   restaurentDetails: '/restaurentDetails',
-  volleyBallDetails: '/volleyBallDetails',
+  VolleyBallLanding: '/VolleyBallLanding',
   page404: '/404',
   page500: '/error',
   // Components

@@ -42,7 +42,7 @@ export default function FilterGuests({
 
   return (
     <>
-      <InputBase
+      {/* <InputBase
         fullWidth
         value={totalGuests > 0 ? `${totalGuests} Guests` : ''}
         placeholder="Guests"
@@ -91,7 +91,7 @@ export default function FilterGuests({
             onIncrement={() => onIncrementGuests('children')}
           />
         </Stack>
-      </Popover>
+      </Popover> */}
     </>
   );
 }

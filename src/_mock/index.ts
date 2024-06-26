@@ -1,6 +1,6 @@
 export * from './assets';
 export * from './_mock';
-
+export * from './volleyball_assets';
 // ----------------------------------------------------------------------
 
 export * from './_jobs';
@@ -13,3 +13,4 @@ export * from './_courses';
 export * from './_products';
 export * from './_blog';
 export * from './_caseStudies';
+export * from './_volleyBall';

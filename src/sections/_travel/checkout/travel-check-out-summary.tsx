@@ -20,7 +20,7 @@ import TextMaxLine from 'src/components/text-max-line';
 import { ITourProps } from 'src/types/tour';
 
 import FilterTime from '../filters/filter-time';
-import FilterGuests from '../filters/filter-guests';
+import FilterGuests from '../filters/volleyball-filter-guests';
 
 // ----------------------------------------------------------------------
 
