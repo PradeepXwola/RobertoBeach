@@ -1,2 +1,2 @@
 # RobertoBeach
-This repo is used to for RobertoBeach development
+This repo is used for RobertoBeach development
