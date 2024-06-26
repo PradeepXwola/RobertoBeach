@@ -9,7 +9,8 @@ const BlogPage = lazy(() => import('src/pages/marketing/posts'));
 const PostPage = lazy(() => import('src/pages/marketing/post'));
 const AboutPage = lazy(() => import('src/pages/marketing/about'));
 const ContactPage = lazy(() => import('src/pages/marketing/contact'));
-const LandingPage = lazy(() => import('src/pages/events/landing'));
+//const LandingPage = lazy(() => import('src/pages/events/landing'));
+const LandingPage = lazy(() => import('src/pages/restaurants/landing'));
 const ServicesPage = lazy(() => import('src/pages/marketing/services'));
 const CaseStudyPage = lazy(() => import('src/pages/marketing/case-study'));
 const EventCaseStudyPage = lazy(() => import('src/pages/events/case-study'))
@@ -18,13 +19,13 @@ const EventCaseStudiesPage = lazy(() => import('src/pages/events/case-studies'))
 
 // ----------------------------------------------------------------------
 
-export const eventRoutes = [
+export const restaurantRoutes = [
   {
-    path: 'event',
+    path: 'restaurant',
     children: [
       {
         element: (
-          <MainLayout disabledSpacing>
+          <MainLayout >
             <LandingPage />
           </MainLayout>
         ),
@@ -38,7 +39,7 @@ export const eventRoutes = [
         ),
         children: [
           { path: 'services', element: <ServicesPage /> },
-          { path: 'allEvents', element: <EventCaseStudiesPage /> },
+          { path: 'case-studies', element: <EventCaseStudiesPage /> },
           { path: 'case-study', element: <EventCaseStudyPage /> },
           { path: 'posts', element: <BlogPage /> },
           { path: 'post', element: <PostPage /> },

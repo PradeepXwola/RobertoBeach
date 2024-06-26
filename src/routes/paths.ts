@@ -15,8 +15,13 @@ export const paths = {
   // Events
   event: {
     root: '/event',
-    caseStudies: '/event/case-studies',
+    caseStudies: '/event/allEvents',
     caseStudy: `/event/case-study`,
+  },
+  restaurant: {
+    root: '/restaurant',
+    /* caseStudies: '/event/case-studies',
+    caseStudy: `/event/case-study`, */
   },
   // Travel
   travel: {

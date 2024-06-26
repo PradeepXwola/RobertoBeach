@@ -101,10 +101,10 @@ export default function EventLandingFreeSEO() {
 
               <StyledInput label="Phone" sx={{ mb: 2.5 }} />
 
-              <StyledInput label="Website URL" sx={{ mb: 5 }} />
+              <StyledInput label="Event" sx={{ mb: 5 }} />
 
               <Button size="large" variant="contained" color="primary">
-                Send Request pradeep
+                Send Request
               </Button>
             </Stack>
           </Grid>

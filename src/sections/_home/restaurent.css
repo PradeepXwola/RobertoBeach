@@ -1,19 +1,18 @@
 .headerFont1 {
     font-size: 75px;
     line-height: 75px;
-    /* margin-bottom: 10vh; */
     color: #3dd34f;
     font-weight: 800;
+    margin-bottom: 7vh !important;
 }
-  
+
 .headerFont2 {
-    /* color: #242424; */
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 40px;
     font-weight: 700;
     margin-bottom: 7vh !important;
 }
-  
+
 .headerFont3 {
     font-size: 40px;
     line-height: 40px;
@@ -23,8 +22,8 @@
     -webkit-text-fill-color: transparent;
     margin-bottom: 7% !important;
 }
-  
-.moreDetailsButton {
+
+/* .moreDetailsButton {
     width: 30%;
     border: 2px solid #F5B443;
     border-radius: 30px;
@@ -37,7 +36,7 @@
     outline: none;
     display: inline-block;
     text-align: center;
-}
+} */
 
 .entertainment-card__video {
     grid-column: 5 / -1;
@@ -45,41 +44,34 @@
     margin: auto;
 }
 
-
-
-
 /* Ring and image related CSS */
 
 .video-card {
     position: relative;
     z-index: 1;
-    height: 600px;
-    width: 600px;
 }
 
 .video-card__previev {
-    border-radius: 50% 30%;
-    left: -10%;
-    width: 520px;
-    height: 540px;
+    border-radius: 60% 42%;
+    left: -7%;
+    width: 90%;
+    height: 94%;
     max-width: 100%;
     overflow: hidden;
     position: absolute;
-    top: 4%;
-    /* transform: translate(-10%, -10%); */
+    top: 6%;
     transform: perspective(1000px) rotateY(-30deg) scale(1, 0.9) translateZ(-100px);
     z-index: -1;
 }
 
 .ring-container {
-    width: 100px;
-    height: 100px;
+    min-height: 58vh;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     transition: background-position 0.3s ease;
     z-index: 30;
-    /* transform: rotate(180deg); */
-
 }
 
 .animate {
@@ -99,20 +91,75 @@
         background-position: 0 0;
     }
     to {
-        background-position: 0 -5776px;
+        background-position: 0 -4647px;
     }
 }
 
 @keyframes spin-back {
     from {
-        /* 5950 */
-        background-position: 0 -5776px;  
+        background-position: 0 -4647px;
     }
     to {
         background-position: 0 0;
     }
 }
 
+/* Responsive styles for mobile view */
 
+@media (max-width: 600px) {
 
+    .headerFont1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
 
+    .headerFont2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .headerFont3 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .ring-container {
+        min-height: 400px;
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: background-position 0.3s ease;
+        z-index: 30;
+    }
+
+    .video-card__previev {
+        border-radius: 60% 42%;
+        left: -8%;
+        width: 90%;
+        height: 94%;
+        max-width: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 6%;
+        transform: perspective(1000px) rotateY(-30deg) scale(1, 0.9) translateZ(-100px);
+        z-index: -1;
+    }
+
+    @keyframes spin {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 0 -4013px;
+        }
+    }
+    
+    @keyframes spin-back {
+        from {
+            background-position: 0 -4013px;
+        }
+        to {
+            background-position: 0 0;
+        }
+    }
+}
