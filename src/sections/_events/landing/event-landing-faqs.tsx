@@ -69,7 +69,7 @@ export default function EventLandingFaqs() {
         <Grid xs={12} md={6} lg={6}>
           <Stack spacing={2} sx={{ mb: 5, textAlign: { xs: 'center', md: 'left' } }}>
             <Typography variant="overline" color="text.disabled">
-              FAQS pradeep
+              FAQS
             </Typography>
 
             <Typography variant="h2">Frequently Asked Questions</Typography>

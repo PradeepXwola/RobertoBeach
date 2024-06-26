@@ -1,3 +1,79 @@
+.volleyBallHeaderFont1 {
+    font-size: 75px;
+    line-height: 75px;
+    color: #3dd34f;
+    font-weight: 800;
+    margin-bottom: 7vh !important;
+}
+
+.volleyBallHeaderFont2 {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-bottom: 7vh !important;
+}
+
+.volleyBallHeaderFont3 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    background-image: linear-gradient(248.61deg, #4C7031 35.93%, #F2AE1C 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 7% !important;
+}
+
+/* .moreDetailsButton {
+    width: 30%;
+    border: 2px solid #F5B443;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 5% !important;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+} */
+
+/* .entertainment-card__video {
+    grid-column: 5 / -1;
+    grid-row: 1 / -1;
+    margin: auto;
+} */
+
+/* Ring and image related CSS */
+
+.volleyBallVideoCard {
+    position: relative;
+    z-index: 1;
+}
+
+.volleyBallVideoCardPreviev {
+    border-radius: 60% 42%;
+    left: -6%;
+    width: 90%;
+    height: 93%;
+    max-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 6%;
+    transform: perspective(1000px) rotateY(-30deg) scale(1, 0.9) translateZ(-100px);
+    z-index: -1;
+}
+
+.volleyBallRingContainer {
+    /* min-height: 350px; */
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-position 0.3s ease;
+    z-index: 30;
+}
+
 .animate {
     animation: spin 0.3s steps(10) forwards, spin-back 0.3s steps(10) reverse forwards;
 }
@@ -14,19 +90,75 @@
     from {
         background-position: 0 0;
     }
-
     to {
-        background-position: 0 -5776px;
+        background-position: 0 -4647px;
     }
 }
 
 @keyframes spin-back {
     from {
-        /* 5950 */
-        background-position: 0 -5776px;
+        background-position: 0 -4647px;
     }
-
     to {
         background-position: 0 0;
+    }
+}
+
+/* Responsive styles for mobile view */
+
+@media (max-width: 600px) {
+    .volleyBallHeaderFont1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .volleyBallHeaderFont2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .volleyBallHeaderFont3 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .volleyBallRingContainer {
+        min-height: 400px;
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: background-position 0.3s ease;
+        z-index: 30;
+    }
+
+    .volleyBallVideoCardPreviev {
+        border-radius: 60% 42%;
+        left: -8%;
+        width: 90%;
+        height: 94%;
+        max-width: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 6%;
+        transform: perspective(1000px) rotateY(-30deg) scale(1, 0.9) translateZ(-100px);
+        z-index: -1;
+    }
+
+    @keyframes spin {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 0 -4013px;
+        }
+    }
+    
+    @keyframes spin-back {
+        from {
+            background-position: 0 -4013px;
+        }
+        to {
+            background-position: 0 0;
+        }
     }
 }

@@ -43,13 +43,13 @@ export default function EventLandingView() {
 
       {/* <PricingMarketing plans={_pricingMarketing} /> */}
 
-      {/* <EventLandingFaqs /> */}
+      <EventLandingFaqs />
 
-      {/* <EventTestimonial testimonials={_testimonials} /> */}
+      <EventTestimonial testimonials={_testimonials} />
 
       {/* <BlogMarketingLatestPosts posts={_marketingPosts.slice(0, 4)} /> */}
 
-      {/* <EventLandingFreeSEO /> */}
+      <EventLandingFreeSEO />
 
       {/* <MarketingNewsletter /> */}
     </>

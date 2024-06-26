@@ -158,7 +158,7 @@ function CarouselItem({ tour }: CarouselItemProps) {
           zIndex: 9,
           py: { xs: 20, md: 0 },
           position: { md: 'absolute' },
-          marginLeft: '10vw'
+          marginLeft: '5vw'
         }}
       >
         {/* <Typography variant="overline" sx={{ color: 'info.main', mb: 5 }}>
@@ -166,7 +166,7 @@ function CarouselItem({ tour }: CarouselItemProps) {
         </Typography> */}
 
         <Typography variant="h1" sx={{ maxWidth: 480 }}>
-          {tour.slug}
+          Welcome To Roberto Beach
         </Typography>
 
         {/* <Stack

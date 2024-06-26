@@ -15,7 +15,7 @@ export const paths = {
   // Events
   event: {
     root: '/event',
-    caseStudies: '/event/case-studies',
+    caseStudies: '/event/allEvents',
     caseStudy: `/event/case-study`,
   },
   restaurant: {

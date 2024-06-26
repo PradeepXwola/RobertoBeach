@@ -1,5 +1,5 @@
 import Container from '@mui/material/Container';
-
+import Grid from '@mui/material/Unstable_Grid2';
 import { useState } from 'react';
 import ringImage from '../../../public/assets/images/home/HexaAnimation1.png'
 import "./events.css";
@@ -19,60 +19,44 @@ export default function EventHome() {
                 py: { xs: 10, md: 15 },
             }}
         >
-            <section>
-                {/* <h1 className=" headerFont1">
-                    Restaurants
-                </h1> */}
-
-                <div className="flex flex-row items-start justify-between space-x-8">
-                    <div className="w-2/5">
-                        {/* <img
-                            src={E2}
-                            alt="e2"
-                            className="image-border rounded-full"
-                        /> */}
-                        <div className="event-video-card js-video-handler">
-                            <div className="event-video-card__previev">
-                                <img src="public/assets/images/home/eventsBg2.jpeg" />
-                            </div>
-                            <div
-                                className={`event-ring-container ${eventCircleHover ? "animate-forward" : "animate-backward"
-                                    }`}
-                                onMouseEnter={() => setEventHover(true)}
-                                onMouseLeave={() => setEventHover(false)}
-                                style={{
-                                    backgroundImage: `url(${ringImage})`,
-                                    width: "550px",
-                                    height: "575px",
-                                }}
-                            />
-                        </div>
+            <Grid container spacing={{ xs: 5, md: 8 }}>
+                <Grid xs={12} md={6} lg={5} className="eventVideoCard">
+                    <div className="eventVideoCardPreviev">
+                        <img src="public/assets/images/home/eventsBg2.jpeg" />
                     </div>
-                    <div className="flex flex-col space-y-5 w-3/5 pl-20">
-                        <h1 className="EventHeaderFont1">
-                            Events
-                        </h1>
-                        <h6 className="EventHeaderFont3 w-100">
-                            with beach feeling
-                        </h6>
-                        <p style={{ marginBottom: '7vh' }}>
-                            <b>ROBERTO BEACH</b> leaves plenty of scope for event visions. We transform wishes into beautiful reality and enable the realization of individual event ideas.
-                        </p>
-                        <Box sx={{ textAlign: 'left' }} className="mt-10">
-                            <Button
-                                // component={RouterLink}
-                                href={paths.eventDetails}
-                                size="large"
-                                variant="contained"
-                                color="inherit"
-                            >
-                                More details
-                            </Button>
-                        </Box>
-                    </div>
-
-                </div>
-            </section>
+                    <div
+                        className={`eventRingContainer ${eventCircleHover ? "animate-forward" : "animate-backward"}`}
+                        onMouseEnter={() => setEventHover(true)}
+                        onMouseLeave={() => setEventHover(false)}
+                        onTouchStart={() => setEventHover(!eventCircleHover)}
+                        style={{
+                            backgroundImage: `url(${ringImage})`,
+                        }}
+                    />
+                </Grid>
+                <Grid xs={12} md={6} lg={7}>
+                    <h1 className="EventHeaderFont1">
+                        Events
+                    </h1>
+                    <h6 className="EventHeaderFont3 w-100">
+                        with beach feeling
+                    </h6>
+                    <p style={{ marginBottom: '7vh' }}>
+                        <b>ROBERTO BEACH</b> leaves plenty of scope for event visions. We transform wishes into beautiful reality and enable the realization of individual event ideas.
+                    </p>
+                    <Box sx={{ textAlign: 'left' }} className="mt-10">
+                        <Button
+                            // component={RouterLink}
+                            href={paths.eventDetails}
+                            size="large"
+                            variant="contained"
+                            color="inherit"
+                        >
+                            More details
+                        </Button>
+                    </Box>
+                </Grid>
+            </Grid>
         </Container>
     );
 }

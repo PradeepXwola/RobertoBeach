@@ -38,7 +38,7 @@ export const eventRoutes = [
         ),
         children: [
           { path: 'services', element: <ServicesPage /> },
-          { path: 'case-studies', element: <EventCaseStudiesPage /> },
+          { path: 'allEvents', element: <EventCaseStudiesPage /> },
           { path: 'case-study', element: <EventCaseStudyPage /> },
           { path: 'posts', element: <BlogPage /> },
           { path: 'post', element: <PostPage /> },

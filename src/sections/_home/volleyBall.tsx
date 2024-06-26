@@ -1,10 +1,11 @@
 import Container from '@mui/material/Container';
-
+import Grid from '@mui/material/Unstable_Grid2';
 import { useState } from 'react';
 import ringImage from '../../../public/assets/images/home/HexaAnimation1.png'
 import "./volleyball.css"
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import { paths } from 'src/routes/paths';
 
 // ----------------------------------------------------------------------
 
@@ -18,60 +19,49 @@ export default function VolleyBallHome() {
                 py: { xs: 10, md: 15 },
             }}
         >
-            <section>
-                <h1 className=" headerFont1">
-                Sports
-                </h1>
 
-                <div className="mx-auto flex flex-row items-center justify-between">
-                    <div className="flex flex-col space-y-2 w-1/2 pr-20">
-                        {/* <h1 className="headerFont1">
-                            Sports
-                        </h1> */}
-                        <h1 className="headerFont2 mb-5">
-                            Sandy & Warm
-                        </h1>
-                        <h1 className="headerFont3" style={{width: '100%'}}>
-                            Beach Volleyball & Beach Soccer
-                        </h1>
-                        <p style={{marginBottom: '7vh'}}>
-                            Beach volleyball in Munich's largest and most modern indoor and outdoor beach facility, on heated sand (8 indoor and 6 outdoor courts) and whatever the weather.
-                        </p>
-                        {/* <button className="moreDetailsButton" onClick={navigateToRestaurent}>
+            <Grid container spacing={{ xs: 5, md: 8 }}>
+                <Grid xs={12} md={6} lg={7}>
+                    <h1 className="volleyBallHeaderFont1">
+                        Sports
+                    </h1>
+                    <h1 className="volleyBallHeaderFont2 mb-5">
+                        Sandy & Warm
+                    </h1>
+                    <h1 className="volleyBallHeaderFont3" >
+                        Beach Volleyball & Beach Soccer
+                    </h1>
+                    <p style={{marginBottom: '7vh'}}>
+                        Beach volleyball in Munich's largest and most modern indoor and outdoor beach facility, on heated sand (8 indoor and 6 outdoor courts) and whatever the weather.
+                    </p>
+                    <Box sx={{ textAlign: 'left' }}>
+                        <Button
+                            href={paths.volleyBallDetails}
+                            size="large"
+                            variant="contained"
+                            color="inherit"
+                        >
                             More details
-                        </button> */}
-                        <Box sx={{ textAlign: 'left' }}>
-                            <Button
-                                // component={RouterLink}
-                                // href={paths.travel.tours}
-                                size="large"
-                                variant="contained"
-                                color="inherit"
-                            >
-                                More details
-                            </Button>
-                        </Box>
+                        </Button>
+                    </Box>
+
+                </Grid>
+
+                <Grid xs={12} md={6} lg={5} className="volleyBallVideoCard">
+                    <div className="volleyBallVideoCardPreviev">
+                        <img alt='Home volleyball' src="public/assets/images/home/restaurentBg1.jpeg" />
                     </div>
-                    <div className="w-1/2">
-                        <div className="video-card js-video-handler">
-                            <div className="video-card__previev">
-                                <img src="public/assets/images/home/restaurentBg1.jpeg" />
-                            </div>
-                            <div
-                                className={`ring-container ${hover ? "animate-forward" : "animate-backward"
-                                    }`}
-                                onMouseEnter={() => setHover(true)}
-                                onMouseLeave={() => setHover(false)}
-                                style={{
-                                    backgroundImage: `url(${ringImage})`,
-                                    width: "550px",
-                                    height: "575px",
-                                }}
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    <div
+                        className={`volleyBallRingContainer ${hover ? "animate-forward" : "animate-backward"}`}
+                        onMouseEnter={() => setHover(true)}
+                        onMouseLeave={() => setHover(false)}
+                        onTouchStart={() => setHover(!hover)}
+                        style={{
+                            backgroundImage: `url(${ringImage})`,
+                        }}
+                    />
+                </Grid>
+            </Grid>
         </Container>
     );
 }
