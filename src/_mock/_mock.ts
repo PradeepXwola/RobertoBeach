@@ -27,7 +27,7 @@ import {
   _productNames,
   _companyNames,
 } from './assets';
-
+import { _volleyBallNames } from './volleyball_assets';
 // ----------------------------------------------------------------------
 
 export const _mock = {
@@ -41,6 +41,7 @@ export const _mock = {
   postTitle: (index: number) => _postTitles[index],
   jobTitle: (index: number) => _jobTitles[index],
   tourName: (index: number) => _tourNames[index],
+  volleyballName: (index: number) => _volleyBallNames[index],
   productName: (index: number) => _productNames[index],
   sentence: (index: number) => _sentences[index],
   description: (index: number) => _descriptions[index],

@@ -38,7 +38,9 @@ export default function VolleyBallDetailsPage() {
               </div>
             ))}
           </dl>
+          
         </div>
       </div>
+      
     )
 }

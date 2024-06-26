@@ -27,6 +27,8 @@ const EventsLandingPage = lazy(() => import('src/pages/events/landing'))
 const LandingPage = lazy(() => import('src/pages/travel/landing'));
 const RestaurantDetailsPage = lazy(() => import('src/pages/restaurent/restaurentDetails'))
 const VolleyBallDetailsPage = lazy(() => import('src/pages/volleyBall/volleyBallDetails'))
+ 
+  const VolleyBallLandingPage =lazy(() => import('src/pages/volleyBall/landing'))
 
 // ----------------------------------------------------------------------
 
@@ -78,17 +80,17 @@ export default function Router() {
         {
           path: 'restaurentDetails',
           element: (
-            <MainLayout>
+            <MainLayout >
               <RestaurantDetailsPage />
             </MainLayout>
           ),
         },
 
         {
-          path: 'VolleyBallDetails',
+          path: 'VolleyBallLanding',
           element: (
-            <MainLayout>
-              <VolleyBallDetailsPage />
+            <MainLayout disabledSpacing>
+              <VolleyBallLandingPage />
             </MainLayout>
           ),
         },

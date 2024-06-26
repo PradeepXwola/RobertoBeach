@@ -1,3 +1,5 @@
+import label from "../illustrations/pattern/label";
+
 export const countries = [
   { code: '', label: '', phone: '' },
   { code: 'AD', label: 'Andorra', phone: '376' },
@@ -423,3 +425,10 @@ export const countries = [
   { code: 'ZM', label: 'Zambia', phone: '260' },
   { code: 'ZW', label: 'Zimbabwe', phone: '263' },
 ];
+// export const booking =[
+  
+// {label:'Subscription Booking'},
+// {label:'Standard Booking'},
+// {label:'Groups Booking'},
+// {label:'Training Booking'},
+// ];

@@ -89,7 +89,7 @@ export const paths = {
   contactUs: '/contactUs',
   eventDetails: '/eventDetails',
   restaurentDetails: '/restaurentDetails',
-  volleyBallDetails: '/volleyBallDetails',
+  VolleyBallLanding: '/VolleyBallLanding',
   page404: '/404',
   page500: '/error',
   // Components

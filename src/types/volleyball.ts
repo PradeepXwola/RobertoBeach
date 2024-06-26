@@ -3,9 +3,9 @@ import { ISocialLinks } from './socials';
 
 // ----------------------------------------------------------------------
 
-export type ITourProps = {
-
+export type IvolleyBallProps = {
   id: string;
+  volleyslug: string;
   slug: string;
   price: number;
   heroUrl: string;

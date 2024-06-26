@@ -22,7 +22,7 @@ export const TOUR_SERVICE_OPTIONS = [
     label: 'Transport by air-conditioned',
   },
 ];
-export const _tours = [...Array(12)].map((_, index) => {
+export const _volleyball = [...Array(12)].map((_, index) => {
   const location1 = booking.map((option) => option.label)[index +1];
 
   const location = countries.map((option) => option.label)[index + 1];
@@ -84,7 +84,9 @@ export const _tours = [...Array(12)].map((_, index) => {
     continent: location,
     tags: _tags.slice(0, 5),
     slug: _mock.tourName(index),
-    duration: '3 days 2 nights',
+    volleyslug: _mock.volleyballName(index),
+
+    duration: '1 Hour',
     createdAt: _mock.time(index),
     favorited: _mock.boolean(index),
     price: _mock.number.price(index),

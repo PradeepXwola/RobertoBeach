@@ -16,7 +16,7 @@ import { fCurrency } from 'src/utils/format-number';
 import { ITourProps } from 'src/types/tour';
 
 import FilterTime from '../filters/filter-time';
-import FilterGuests from '../filters/filter-guests';
+import FilterGuests from '../filters/volleyball-filter-guests';
 
 // ----------------------------------------------------------------------
 

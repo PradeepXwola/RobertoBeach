@@ -7,44 +7,22 @@ import Stack, { StackProps } from '@mui/material/Stack';
 import Iconify from 'src/components/iconify';
 
 import FilterTime from './filter-time';
-import FilterGuests from './volleyball-filter-guests';
-import FilterLocation from './filter-location';
+import StartTime from './filter-start-time';
+import Duration from './filter-duration';
 
 // ----------------------------------------------------------------------
 
-export default function TravelFilters({ sx, ...other }: StackProps) {
+export default function VolleyBallFilters({ sx, ...other }: StackProps) {
   const [departureDay, setDepartureDay] = useState<Date | null>(null);
 
-  const [guests, setGuests] = useState({
-    adults: 0,
-    children: 0,
-  });
+
 
   const handleChangeDepartureDay = useCallback((newValue: Date | null) => {
     setDepartureDay(newValue);
   }, []);
 
-  const handleIncrementGuests = useCallback(
-    (guest?: string) => {
-      if (guest === 'children') {
-        setGuests({ ...guests, children: guests.children + 1 });
-      } else {
-        setGuests({ ...guests, adults: guests.adults + 1 });
-      }
-    },
-    [guests]
-  );
 
-  const handleDecreaseGuests = useCallback(
-    (guest?: string) => {
-      if (guest === 'children') {
-        setGuests({ ...guests, children: guests.children - 1 });
-      } else {
-        setGuests({ ...guests, adults: guests.adults - 1 });
-      }
-    },
-    [guests]
-  );
+
 
   return (
     <Stack
@@ -54,20 +32,16 @@ export default function TravelFilters({ sx, ...other }: StackProps) {
       sx={{ p: 4, borderRadius: 2, bgcolor: 'background.neutral', ...sx }}
       {...other}
     >
-      <FilterLocation />
-
-      <Divider flexItem orientation="vertical" />
 
       <FilterTime departureDay={departureDay} onChangeDepartureDay={handleChangeDepartureDay} />
-
       <Divider flexItem orientation="vertical" />
-
-      <FilterGuests
-        guests={guests}
-        onDecreaseGuests={handleDecreaseGuests}
-        onIncrementGuests={handleIncrementGuests}
+      <StartTime
       />
 
+  
+      <Divider flexItem orientation="vertical" />
+      <Duration />
+     
       <Button
         size="large"
         color="secondary"
