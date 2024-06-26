@@ -15,6 +15,8 @@ import { eLearningRoutes } from './elearning';
 import { eCommerceRoutes } from './ecommerce';
 import { componentsRoutes } from './components';
 import { eventRoutes } from './event';
+import { restaurantRoutes } from './restaurant';
+
 // import EventsDetailsPage from 'src/pages/events/eventsDetails';
 
 // ----------------------------------------------------------------------
@@ -25,7 +27,8 @@ const ContactUsPage = lazy(() => import('src/pages/contact-us'));
 const EventsDetailsPage = lazy(() => import('src/pages/events/eventsDetails'))
 const EventsLandingPage = lazy(() => import('src/pages/events/landing'))
 const LandingPage = lazy(() => import('src/pages/travel/landing'));
-const RestaurantDetailsPage = lazy(() => import('src/pages/restaurent/restaurentDetails'))
+const RestaurantDetailsPage = lazy(() => import('src/pages/restaurants/restaurentDetails'))
+
 const VolleyBallDetailsPage = lazy(() => import('src/pages/volleyBall/volleyBallDetails'))
 
 // ----------------------------------------------------------------------
@@ -104,6 +107,8 @@ export default function Router() {
         },
 
         ...eventRoutes,
+
+        ...restaurantRoutes,
 
         ...marketingRoutes,
 

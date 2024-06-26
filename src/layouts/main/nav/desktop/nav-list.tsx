@@ -31,7 +31,7 @@ export default function NavList({ data }: NavListProps) {
   const active = useActiveLink(data.path, !!data.children);
 
   const mainList = data.children ? data.children.filter((list) => list.subheader !== 'Common') : [];
-
+  
   const commonList = data.children
     ? data.children.find((list) => list.subheader === 'Common')
     : null;

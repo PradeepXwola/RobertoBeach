@@ -18,6 +18,11 @@ export const paths = {
     caseStudies: '/event/case-studies',
     caseStudy: `/event/case-study`,
   },
+  restaurant: {
+    root: '/restaurant',
+    /* caseStudies: '/event/case-studies',
+    caseStudy: `/event/case-study`, */
+  },
   // Travel
   travel: {
     root: '/travel',
