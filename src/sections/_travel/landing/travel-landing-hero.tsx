@@ -156,9 +156,9 @@ function CarouselItem({ tour }: CarouselItemProps) {
         alignItems="left"
         sx={{
           zIndex: 9,
-          py: { xs: 20, md: 0 },
+          // py: { xs: 20, md: 0 },
+          py: { xs: 10, md: 15 },
           position: { md: 'absolute' },
-          marginLeft: '5vw'
         }}
       >
         {/* <Typography variant="overline" sx={{ color: 'info.main', mb: 5 }}>

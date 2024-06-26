@@ -35,7 +35,8 @@ export default function EventLandingCaseStudies({ caseStudies }: Props) {
     <Container
       sx={{
         overflow: 'hidden',
-        pt: { xs: 2, md: 10 },
+        // pt: { xs: 2, md: 10 },
+        py: 10,
         pb: 2,
       }}
     >
