@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
@@ -19,6 +18,7 @@ import TextMaxLine from 'src/components/text-max-line';
 import Carousel, { useCarousel, CarouselDots } from 'src/components/carousel';
 
 import { ITourProps } from 'src/types/tour';
+import { Container } from '@mui/material';
 
 // ----------------------------------------------------------------------
 
@@ -159,15 +159,23 @@ function CarouselItem({ tour }: CarouselItemProps) {
           // py: { xs: 20, md: 0 },
           py: { xs: 10, md: 15 },
           position: { md: 'absolute' },
+          width: '100%',
+          maxWidth: '100%',
+          // px: { xs: 2, md: 5 },
         }}
       >
         {/* <Typography variant="overline" sx={{ color: 'info.main', mb: 5 }}>
           {tour.location}
         </Typography> */}
-
-        <Typography variant="h1" sx={{ maxWidth: 480 }}>
-          Welcome To Roberto Beach
-        </Typography>
+        <Container
+            sx={{
+                py: { xs: 10, md: 15 },
+            }}
+        >
+          <Typography variant="h1" sx={{ maxWidth: 480, fontSize: { xs: '2.5rem', md: '3.75rem' } }} >
+            Welcome To Roberto Beach
+          </Typography>
+        </Container>
 
         {/* <Stack
           alignItems="center"

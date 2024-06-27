@@ -6,8 +6,30 @@ import "./volleyball.css"
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { paths } from 'src/routes/paths';
+import { textGradient } from 'src/theme/css';
+import { styled } from '@mui/material/styles';
+import { m } from 'framer-motion';
 
 // ----------------------------------------------------------------------
+
+const StyledTextGradient = styled(m.h1)(({ theme }) => ({
+    ...textGradient(
+      `300deg, #00A76F 0%, #FFAB00 25%, #00A76F 50%, #FFAB00 75%, #00A76F 100%`
+    ),
+    padding: 0,
+    marginTop: 8,
+    lineHeight: 1,
+    fontWeight: 900,
+    marginBottom: 24,
+    letterSpacing: 8,
+    textAlign: 'left',
+    backgroundSize: '400%',
+    fontSize: `${64 / 16}rem`,
+    fontFamily: theme.typography.fontSecondaryFamily,
+    [theme.breakpoints.up('md')]: {
+      fontSize: `${96 / 16}rem`,
+    },
+}));
 
 export default function VolleyBallHome() {
 
@@ -22,9 +44,21 @@ export default function VolleyBallHome() {
 
             <Grid container spacing={{ xs: 5, md: 8 }}>
                 <Grid xs={12} md={6} lg={7}>
-                    <h1 className="volleyBallHeaderFont1">
+                    {/* <h1 className="volleyBallHeaderFont1">
                         Sports
-                    </h1>
+                    </h1> */}
+                    <StyledTextGradient
+                        className="volleyBallHeaderFont1"
+                        animate={{ backgroundPosition: '200% center' }}
+                        transition={{
+                            repeatType: 'reverse',
+                            ease: 'linear',
+                            duration: 20,
+                            repeat: Infinity,
+                        }}
+                        >
+                        Sports
+                    </StyledTextGradient>
                     <h1 className="volleyBallHeaderFont2 mb-5">
                         Sandy & Warm
                     </h1>
@@ -36,7 +70,7 @@ export default function VolleyBallHome() {
                     </p>
                     <Box sx={{ textAlign: 'left' }}>
                         <Button
-                            href={paths.volleyBallDetails}
+                            href={paths.VolleyBallLanding}
                             size="large"
                             variant="contained"
                             color="inherit"

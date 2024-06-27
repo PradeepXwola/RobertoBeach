@@ -116,7 +116,7 @@ export const useTranslatedConfig = () => {
     { title: t('titles.home'), path: '/home' },
     { title: t('titles.events'), path: paths.event.root},
     { title: t('titles.restaurants'), path: paths.restaurant.root},
-    { title: t('titles.restaurants'), path: paths.restaurentDetails },
+    // { title: t('titles.restaurants'), path: paths.restaurentDetails },
     { title: t('titles.volleyBall'), path: paths.VolleyBallLanding },
     { title: t('titles.beachClub'), path: '#' },
     { title: t('titles.contactUs'), path: paths.contactUs },

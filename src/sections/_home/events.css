@@ -62,14 +62,14 @@
   }
   
   .eventVideoCardPreviev {
-    border-radius: 60% 42%;
-    left: 15%;
+    border-radius: 46% 53%;
+    left: 17%;
     width: 90%;
     height: 94%;
     max-width: 100%;
     overflow: hidden;
     position: absolute;
-    top: 3%;
+    top: 6%;
     transform: perspective(1000px) rotateY(30deg) scale(1, 0.9) translateZ(-100px);
     z-index: -1;
   }
@@ -143,16 +143,16 @@
   }
 
   .eventVideoCardPreviev {
-      border-radius: 60% 42%;
-      left: -8%;
-      width: 90%;
-      height: 94%;
-      max-width: 100%;
-      overflow: hidden;
-      position: absolute;
-      top: 6%;
-      transform: perspective(1000px) rotateY(-30deg) scale(1, 0.9) translateZ(-100px);
-      z-index: -1;
+    border-radius: 46% 53%;
+    left: 17%;
+    width: 90%;
+    height: 94%;
+    max-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 5%;
+    transform: perspective(1000px) rotateY(30deg) scale(1, 0.9) translateZ(-100px);
+    z-index: -1;
   }
 
   @keyframes spin {

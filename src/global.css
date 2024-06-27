@@ -12,3 +12,34 @@
 @import 'yet-another-react-lightbox/styles.css';
 @import 'yet-another-react-lightbox/plugins/captions.css';
 @import 'yet-another-react-lightbox/plugins/thumbnails.css';
+
+/* Custom Scrollbar Styles */
+*::-webkit-scrollbar {
+    width: 8px;
+    /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+    background: linear-gradient(#00c9ff 0%,
+            /* Sky blue starts */
+            #92fe9d 50%,
+            /* Light green starts, giving more area */
+            #00c9ff 100%
+            /* Sky blue repeats, covering more area */
+        );
+    /* Vertical gradient effect focusing on blues and greens */
+    border-radius: 10px;
+    /* Roundness of the scrollbar thumb */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(#00c9ff, #92fe9d, #00c9ff);
+    /* Maintain the same gradient on hover */
+    opacity: 0.9;
+    /* Slight transparency on hover */
+}

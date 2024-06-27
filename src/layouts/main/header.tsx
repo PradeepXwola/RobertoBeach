@@ -55,8 +55,8 @@ export default function Header({ headerOnDark }: Props) {
     <>
       <Box sx={{ lineHeight: 0, position: 'relative' }}>
         {/* <Logo /> */}
-        {darkModeOn && <img width={100} height={50} alt='Roberto Beach Light Logo' src="/assets/logo/RBLightLogo.png"/>}
-        {!darkModeOn && <img width={100} height={50} alt='Roberto Beach Dark Logo' src="/assets/logo/RBDarkLogo.svg"/>}
+        {darkModeOn && <img width={50} height={50} alt='Roberto Beach Light Logo' src="/assets/logo/RBLightLogo.png"/>}
+        {!darkModeOn && <img width={50} height={50} alt='Roberto Beach Dark Logo' src="/assets/logo/RBDarkLogo.png"/>}
         {/* <Link href="https://zone-docs.vercel.app/changelog" target="_blank" rel="noopener">
           <Label
             color="info"
