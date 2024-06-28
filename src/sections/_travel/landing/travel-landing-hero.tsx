@@ -120,15 +120,15 @@ type CarouselItemProps = {
 function CarouselItem({ tour }: CarouselItemProps) {
   const theme = useTheme();
 
-  const videoLink = "public/assets/background/header_01.mp4"
+  const videoLink = "public/assets/background/Header_02.m4v"
 
   const renderOverlay = (
     <Box
       sx={{
-        ...bgGradient({
-          startColor: `${alpha(theme.palette.common.black, 0)} 0%`,
-          endColor: `${theme.palette.common.black} 75%`,
-        }),
+        // ...bgGradient({
+        //   startColor: `${alpha(theme.palette.common.black, 0)} 0%`,
+        //   endColor: `${theme.palette.common.black} 75%`,
+        // }),
         backgroundColor: alpha(theme.palette.common.black, 0.24),
         top: 0,
         left: 0,

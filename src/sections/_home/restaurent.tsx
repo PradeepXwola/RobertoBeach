@@ -67,7 +67,16 @@ export default function RestaurentHome() {
                     <p style={{ marginBottom: '7vh' }}>
                         The <b>ROBERTO BEACH</b> Restaurant with its professional and spacious infrastructure is the culinary highlight for corporate and private events as well as daytime gastronomy with a view of Lake Aschheim.
                     </p>
-                    <Box sx={{ textAlign: 'left' }}>
+                    <Box sx={{ display: 'flex',
+                                textAlign: 'center',
+                                alignItems: 'center',
+                                position: 'relative',
+                                color: 'common.white',
+                                justifyContent: {
+                                    xs: 'center',
+                                    md: 'left',
+                                }
+                            }}>
                         <Button
                             href={paths.restaurant.root}
                             size="large"

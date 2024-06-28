@@ -78,7 +78,16 @@ export default function EventHome() {
                     <p style={{ marginBottom: '7vh' }}>
                         <b>ROBERTO BEACH</b> leaves plenty of scope for event visions. We transform wishes into beautiful reality and enable the realization of individual event ideas.
                     </p>
-                    <Box sx={{ textAlign: 'left' }} className="mt-10">
+                    <Box sx={{ display: 'flex',
+                                textAlign: 'center',
+                                alignItems: 'center',
+                                position: 'relative',
+                                color: 'common.white',
+                                justifyContent: {
+                                    xs: 'center',
+                                    md: 'left',
+                                }
+                            }} className="mt-10">
                         <Button
                             // component={RouterLink}
                             href={paths.event.root}

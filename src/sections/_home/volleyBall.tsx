@@ -68,7 +68,16 @@ export default function VolleyBallHome() {
                     <p style={{marginBottom: '7vh'}}>
                         Beach volleyball in Munich's largest and most modern indoor and outdoor beach facility, on heated sand (8 indoor and 6 outdoor courts) and whatever the weather.
                     </p>
-                    <Box sx={{ textAlign: 'left' }}>
+                    <Box sx={{  display: 'flex',
+                                textAlign: 'center',
+                                alignItems: 'center',
+                                position: 'relative',
+                                color: 'common.white',
+                                justifyContent: {
+                                    xs: 'center',
+                                    md: 'left',
+                                }
+                            }}>
                         <Button
                             href={paths.VolleyBallLanding}
                             size="large"
